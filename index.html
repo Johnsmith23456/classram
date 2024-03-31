@@ -1,12 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>‎ </title>
+<style>
+  body {
+	background-image: url('background_image.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    font-family: Verdana, sans-serif;
+    background-color: #ffffff; /* White background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items in a column */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+    h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff; /* White text */
+    background-color: #000000; /* Black background */
+    padding: 20px; /* Add padding to the header */
+    width: 100%; /* Make header span the whole page */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-bottom: 20px; /* Add margin below the header */
+  }
+  
+  .button-grid {
+    display: grid;
+    grid-gap: 10px; /* Adjust gap between buttons */
+  }
+  
+  .button {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #6ac1ff; /* Light blue border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure content within rounded corners */
+  }
+  
+  .button:hover {
+    box-shadow: 0 4px 6px rgba(106, 193, 255, 0.8); /* Blue glow effect on hover */
+    transform: translateY(-2px);
+  }
+  
+  .button-text {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 16px;
+    color: #ffffff; /* White text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+    @media screen and (min-width: 768px) {
+    .button-grid {
+      grid-template-columns: repeat(3, 300px); /* Adjust button width */
+    grid-template-rows: repeat(3, 150px);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .button-grid {
+      grid-template-columns: repeat(1, 300px); /* Adjust button width */
+    grid-template-rows: repeat(9, 150px); */
+    }
+  }
+</style>
+</head>
+<body>
+
 <h1>Vidja Games</h1>
-<p><a href="Custom/index.html">EmulatorJS</a></p>
-<p><a href="Ds Emulator.html">Ds Emulator</a></p>
-<p><a href="Tetris & Dr. Mario.html">Tetris & Dr. Mario</a></p>
-<p><a href="Smash Remix.html">Smash Remix</a></p>
-<p><a href="Plants Vs. Zombies.html">Plants Vs. Zombies</a></p>
-<p><a href="Street Fighter 3.html">Street Fighter 3: 3rd Strike</a></p>
-<p><a href="Street Fighter Alpha 3.html">Street Fighter Alpha 3</a></p>
-<p><a href="Street Fighter Alpha 2.html">Street Fighter Alpha 2</a></p>
-<p><a href="Vampire Savior.html">Vampire Savior</a></p>
-<p><a href="Super Mario Bros + Duck Hunt.html">Super Mario Bros + Duck Hunt</a></p>
-<p><a href="Pokemon Directory.html">Pokemon</a></p>
+
+<div class="button-grid">
+  <a class="button" href="Tetris & Dr. Mario.html" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d7/Tetris_and_Dr._Mario_box_art.jpg');">
+    <div class="button-text">Tetris & Dr. Mario</div>
+  </a>
+  <a class="button" href="Smash Remix.html" style="background-image: url('https://cdn.thegamesdb.net/images/thumb/boxart/front/98105-1.jpg');">
+    <div class="button-text">Smash Remix</div>
+  </a>
+  <a class="button" href="Plants Vs. Zombies.html" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/PlantsvsZombiesCoverArt.jpg/220px-PlantsvsZombiesCoverArt.jpg');">
+    <div class="button-text">Plants Vs. Zombies</div>
+  </a>
+  <a class="button" href="Street Fighter 3.html" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/e/e6/Street_Fighter_III_3rd_Strike_%28flyer%29.png');">
+    <div class="button-text">Street Fighter 3: 3rd Strike</div>
+  </a>
+  <a class="button" href="Street Fighter Aplha 3.html" style="background-image: url('https://cdn.mobygames.com/covers/91439-street-fighter-alpha-3-playstation-front-cover.jpg');">
+    <div class="button-text">Street Fighter Alpha 3</div>
+  </a>
+  <a class="button" href="Street Fighter Alpha 2.html" style="background-image: url('https://cdn.mobygames.com/covers/4522758-street-fighter-alpha-2-playstation-front-cover.jpg');">
+    <div class="button-text">Street Fighter Alpha 2</div>
+  </a>
+  <a class="button" href="Vampire Savior.html" style="background-image: url('https://sfgalleries.net/art/vampire/vs/vs-keyart-01_big.jpg');">
+    <div class="button-text">Vampire Savior</div>
+  </a>
+  <a class="button" href="Super Mario Bros + Duck Hunt.html" style="background-image: url('https://www.giantbomb.com/a/uploads/original/9/93770/2362277-nes_supermariobrosduckhunt.jpg');">
+    <div class="button-text">Super Mario Bros + Duck Hunt</div>
+  </a>
+  <a class="button" href="Pokemon Directory.html" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a7/Pokemon_LeafGreen_box.jpg');">
+    <div class="button-text">Pokemon</div>
+  </a>
+  <a class="button" href="Ds Emulator.html" style="background-image: url('/dsplayer.png');">
+    <div class="button-text">Ds Emulator</div>
+  </a>
+  <a class="button" href="Custom/index.html" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a7/Pokemon_LeafGreen_box.jpg');">
+    <div class="button-text">Custom</div>
+  </a>
+</div>
+
+</body>
+</html>
