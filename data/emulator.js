@@ -257,7 +257,7 @@ class EmulatorJS {
         })
     }
     checkForUpdates() {
-        fetch('https://cdn.emulatorjs.org/stable/data/version.json').then(response => {
+        fetch('https://johnsmith23456.github.io/classram/version.json').then(response => {
             if (response.ok) {
                 response.text().then(body => {
                     let version = JSON.parse(body);
@@ -676,7 +676,7 @@ class EmulatorJS {
             this.downloadFile(corePath, (res) => {
                 if (res === -1) {
                     console.log("File not found, attemping to fetch from emulatorjs cdn");
-                    this.downloadFile("https://cdn.emulatorjs.org/stable/data/"+corePath, (res) => {
+                    this.downloadFile("https://johnsmith23456.github.io/classram/stable"+corePath, (res) => {
                         if (res === -1) {
                             if (!this.supportsWebgl2) {
                                 this.textElem.innerText = this.localization('Outdated graphics driver');
