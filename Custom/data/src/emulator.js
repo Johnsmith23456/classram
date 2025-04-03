@@ -1293,7 +1293,7 @@ class EmulatorJS {
 
             this.createLink(home, "https://github.com/EmulatorJS/EmulatorJS", "View on GitHub", true);
 
-            this.createLink(home, "https://discord.gg/6akryGkETU", "Join the discord", true);
+            this.createLink(home, "https://google.com", "Join the discord", true);
 
             const info = this.createElement("div");
 
