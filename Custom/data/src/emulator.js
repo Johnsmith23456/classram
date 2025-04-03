@@ -1297,7 +1297,7 @@ class EmulatorJS {
 
             const info = this.createElement("div");
 
-            this.createLink(info, "https://emulatorjs.org", "EmulatorJS");
+            this.createLink(info, "https://google.com", "EmulatorJS");
             // I do not like using innerHTML, though this should be "safe"
             info.innerHTML += " is powered by ";
             this.createLink(info, "https://github.com/libretro/RetroArch/", "RetroArch");
